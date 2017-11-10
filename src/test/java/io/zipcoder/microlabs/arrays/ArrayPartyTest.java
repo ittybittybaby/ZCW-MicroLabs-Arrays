@@ -62,16 +62,17 @@ public class ArrayPartyTest {
     //TODO Define the method isPalindromeTest
     @Test
     public void isPalindromeTest() {
-        String[] palindrome = {"racecar", "kayak", "level", "noon", };
+        String[] palindrome = {"Sausage", "Eggs", "Beans",
+                "Beans", "Eggs", "Sausage"};
 
         String expectedFalse = "False";
         String expectedTrue = "True";
 
         String actualFalse = arrayParty.isPalindrome(breakfast);
-        String acutalTrue = arrayParty.isPalindrome(palindrome);
+        String actualTrue = arrayParty.isPalindrome(palindrome);
 
         Assert.assertEquals(expectedFalse, actualFalse);
-        Assert.assertEquals(expectedTrue, acutalTrue);
+        Assert.assertEquals(expectedTrue, actualTrue);
     }
 
     @Test

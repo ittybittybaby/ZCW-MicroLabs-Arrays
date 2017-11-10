@@ -28,16 +28,29 @@ public class ArrayParty {
 
     //TODO Define the method isPalindrome
     public String isPalindrome(String[] inputArray) {
+        int j = inputArray.length - 1;
         String isPalindrome = "False";
 
-        for(String str : inputArray) {
-            StringBuilder reversed = new StringBuilder(str).reverse();
-            if(str.equals(reversed.toString())){
+        for(int i = 0; i <= j; i++) {
+            if(inputArray[i].equals(inputArray[j])) {
                 isPalindrome = "True";
             }
+            else {
+                isPalindrome = "False";
+                break;
+            }
+            j--;
         }
 
         return isPalindrome;
+        //        String isPalindrome = "False";
+//
+//        for(String str : inputArray) {
+//            StringBuilder reversed = new StringBuilder(str).reverse();
+//            if(str.equals(reversed.toString())){
+//                isPalindrome = "True";
+//            }
+//        }
     }
 
     public String compress(int[] inputArray) {
